@@ -8,8 +8,9 @@ MongoClient.connect('mongodb://db:27017/TodoApp', (err, client) => {
   }
   console.log('Connected to MongoDB server');
   const db = client.db('TodoApp');
+
   db.collection('Todos').insertOne({
-    text:'Walk the dog',
+    text:'Eat lunch',
     completed: false
   }, (err, result) =>{
     if(err){
@@ -17,6 +18,7 @@ MongoClient.connect('mongodb://db:27017/TodoApp', (err, client) => {
     }
     console.log(JSON.stringify(result.ops, undefined, 2));
   });
+
   // db.collection('Users').insertOne({
   //   name: 'Diego',
   //   age: 36,
@@ -27,5 +29,6 @@ MongoClient.connect('mongodb://db:27017/TodoApp', (err, client) => {
   //     }
   //     console.log((JSON.stringify(result.ops[0]._id.getTimestamp(), undefined, 2)));
   // })
-  client.close();
+
+  //client.close();
 });

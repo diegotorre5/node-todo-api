@@ -18,11 +18,11 @@
   },
   "homepage": "https://github.com/diegotorre5/node-web-server#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.18.2",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.16.2",
     "hbs": "^4.1.1",
     "mongodb": "^3.0.2",
-    "mongoose": "^5.9.27"
+    "mongoose": "^5.0.6"
   }
 }

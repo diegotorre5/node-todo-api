@@ -25,5 +25,10 @@
     "mongodb": "^3.0.2",
     "mongoose": "^5.0.6"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "expect": "^22.3.0",
+    "mocha": "^5.0.1",
+    "nodemon": "^1.15.0",
+    "supertest": "^3.0.0"
+  }
 }

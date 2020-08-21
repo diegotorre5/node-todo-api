@@ -8,8 +8,10 @@ const {ObjectID} = require('mongodb');
 
 var app = express();
 
-app.listen(4000, () => {
-  console.log('Started on port 4000');
+const port = process.env.PORT || 4000;
+
+app.listen(port, () => {
+  console.log(`Started on port ${port}`);
 });
 
 app.use(bodyParser.json());
